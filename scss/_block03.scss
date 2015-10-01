@@ -1,0 +1,50 @@
+.b03 {
+	padding-bottom: 110px;
+	background: url("../img/b03_bg.jpg") top center no-repeat;
+
+	.title {
+		color: #fff;
+		margin-bottom: 40px;
+
+		&:after {
+			background: #97b79b;
+		}
+	}
+
+	.b03__map {
+		position: relative;
+		border: 3px solid #eafecd;
+	}
+
+	.b03__map-content {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		position: absolute;
+	}
+
+
+	@media (min-width: $screen-sm-min) {
+
+		.title {
+			color: #347781;
+			margin-bottom: 70px;
+		}
+	}
+
+	@media (min-width: $screen-md-min) {
+
+		.b03__map {
+			margin: 0 20px;
+		}
+	}
+
+	@media (min-width: $screen-lg-min) {
+
+		.b03__map {
+			margin: 0 60px;
+		}
+	}
+
+}
