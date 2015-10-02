@@ -5051,11 +5051,13 @@ button.close {
 .b01 {
   color: #fff;
   overflow: hidden;
-  padding-top: 50px;
-  padding-bottom: 50px;
   position: relative;
   background: url("../img/b01_bg.jpg") top center no-repeat; }
   .b01 .container {
+    height: 100%;
+    min-height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
     position: relative; }
   .b01 .navbar-brand {
     padding: 0;
@@ -5123,8 +5125,7 @@ button.close {
         background: #49c157;
         border-color: #49c157; }
   .b01 .b01__slider-inner {
-    margin-top: 50px;
-    position: relative; }
+    padding-top: 50px; }
   .b01 .b01__slider {
     position: relative;
     font-family: "SegoeUI"; }
@@ -5153,7 +5154,16 @@ button.close {
         background-position: -41px 0; }
   @media (min-width: 768px) {
     .b01 {
-      height: 650px; }
+      height: 100%;
+      width: 100%;
+      min-height: 600px;
+      position: relative;
+      display: block;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover; }
       .b01 .navbar-brand {
         margin-top: -10px; }
       .b01 .navbar-nav > li {
@@ -5165,7 +5175,11 @@ button.close {
           padding-top: 5px;
           padding-bottom: 5px; }
       .b01 .b01__slider-inner {
-        margin-top: 300px; }
+        left: 15px;
+        right: 15px;
+        bottom: 90px;
+        padding-top: 0;
+        position: absolute; }
       .b01 .b01__slider {
         overflow: hidden;
         position: relative;
@@ -5179,24 +5193,25 @@ button.close {
       .b01 .wwf-logo {
         left: 20px;
         top: 150px;
+        z-index: 10;
         position: absolute; } }
   @media (min-width: 992px) {
-    .b01 {
+    .b01 .container {
       padding-top: 55px; }
-      .b01 .navbar-brand {
-        width: 200px;
-        margin-top: -25px; }
-      .b01 .navbar-nav {
-        font-size: 16px; }
-        .b01 .navbar-nav > li > a {
-          font-size: 16px;
-          font-weight: 700; }
-      .b01 .b01__slider .slide-title {
-        font-size: 48px;
-        line-height: 48px;
-        margin-bottom: 20px; }
-      .b01 .b01__slider .slide-text {
-        font-size: 18px; } }
+    .b01 .navbar-brand {
+      width: 200px;
+      margin-top: -25px; }
+    .b01 .navbar-nav {
+      font-size: 16px; }
+      .b01 .navbar-nav > li > a {
+        font-size: 16px;
+        font-weight: 700; }
+    .b01 .b01__slider .slide-title {
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 20px; }
+    .b01 .b01__slider .slide-text {
+      font-size: 18px; } }
   @media (min-width: 1200px) {
     .b01 .container {
       width: 970px; }
@@ -5533,7 +5548,7 @@ button.close {
     overflow: hidden;
     position: relative; }
   @media (min-width: 768px) {
-    .b07 .gallery li {
+    .b07 .gallery .gallery__group {
       width: 300px; }
     .b07 .gallery .gallery__item {
       width: 300px;
@@ -5705,6 +5720,9 @@ button.close {
 
 /* Base styles
    ========================= */
+html, body {
+  height: 100%; }
+
 body {
   color: #535950;
   font-size: 14px;

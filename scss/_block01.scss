@@ -1,12 +1,14 @@
 .b01 {
 	color: #fff;
 	overflow: hidden;
-	padding-top: 50px;
-	padding-bottom: 50px;
 	position: relative;
 	background: url("../img/b01_bg.jpg") top center no-repeat;
 
 	.container {
+		height: 100%;
+		min-height: 100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
 		position: relative;
 	}
 
@@ -108,8 +110,7 @@
 	}
 
 	.b01__slider-inner {
-		margin-top: 50px;
-		position: relative;
+		padding-top: 50px;
 	}
 
 	.b01__slider {
@@ -154,7 +155,17 @@
 
 
 	@media (min-width: $screen-sm-min) {
-		height: 650px;
+		height: 100%;
+		width: 100%;
+		min-height: 600px;
+		position: relative;
+		display: block;
+		background-attachment: fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+
 
 		.navbar-brand {
 			margin-top: -10px;
@@ -176,7 +187,11 @@
 		}
 
 		.b01__slider-inner {
-			margin-top: 300px;
+			left: 15px;
+			right: 15px;
+			bottom: 90px;
+			padding-top: 0;
+			position: absolute;
 		}
 
 		.b01__slider {
@@ -198,12 +213,16 @@
 		.wwf-logo {
 			left: 20px;
 			top: 150px;
+			z-index: 10;
 			position: absolute;
 		}
 	}
 
 	@media (min-width: $screen-md-min) {
-		padding-top: 55px;
+
+		.container {
+			padding-top: 55px;
+		}
 
 		.navbar-brand {
 			width: 200px;
@@ -221,6 +240,7 @@
 				}
 			}
 		}
+
 
 		.b01__slider {
 

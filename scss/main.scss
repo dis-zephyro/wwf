@@ -109,6 +109,10 @@
 /* Base styles
    ========================= */
 
+html, body {
+    height: 100%;
+}
+
 body {
     color: #535950;
     font-size: 14px;
