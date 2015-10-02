@@ -42,3 +42,17 @@
 	font-stretch: normal;
 	unicode-range: U+0020-2666;
 }
+
+
+@font-face {
+	font-family:'Appetite-Regular';
+	src: url('../fonts/Appetite-Regular/Appetite_gdi.eot');
+	src: url('../fonts/Appetite-Regular/Appetite_gdi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Appetite-Regular/Appetite_gdi.woff') format('woff'),
+	url('../fonts/Appetite-Regular/Appetite_gdi.ttf') format('truetype'),
+	url('../fonts/Appetite-Regular/Appetite_gdi.svg#Appetite-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2122;
+}

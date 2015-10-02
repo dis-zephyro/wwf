@@ -10,6 +10,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="js/vendor/slick/slick.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="js/vendor/jquery.smoothDivScroll/css/smoothDivScroll.css">
         <link rel="stylesheet" href="css/main.css">
 
         <!--[if lt IE 9]>
@@ -36,12 +37,12 @@
                         <a class="navbar-brand" href="index.html"><img class="img-responsive" src="img/header__logo.png" alt="Таёжная сага"></a> </div>
                     <div class="collapse navbar-collapse" id="scrollTarget">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Новости</a> </li>
-                            <li><a href="#">Перепись</a> </li>
-                            <li><a href="#">Природа в тайге</a> </li>
-                            <li><a href="#">Карта</a> </li>
-                            <li><a href="#">Наследить</a> </li>
-                            <li><a href="#">Другие проекты</a> </li>
+                            <li><a href="#b02">Уроки</a></li>
+                            <li><a href="#b03">Истории</a></li>
+                            <li><a href="#b04">Природа</a></li>
+                            <li><a href="#b05">Команда</a></li>
+                            <li><a href="#b06">Места</a></li>
+                            <li><a href="#b07">Галерея</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -84,7 +85,7 @@
             </div>
         </section>
 
-        <section class="b02">
+        <section class="b02 landingItem" id="b02">
             <div class="container">
                 <div class="title">
                     <strong>Уроки</strong>
@@ -145,7 +146,7 @@
             </div>
         </section>
 
-        <section class="b03">
+        <section class="b03 landingItem" id="b03">
             <div class="container">
                 <div class="title">
                     <strong>Карта</strong>
@@ -158,7 +159,7 @@
             </div>
         </section>
 
-        <section class="b04">
+        <section class="b04 landingItem" id="b04">
             <div class="container">
                 <div class="title">
                     <strong>Природа</strong>
@@ -199,19 +200,382 @@
                 </div>
             </div>
         </section>
-        <section class="b05">
+
+        <section class="b05 landingItem" id="b05">
             <div class="container">
+                <div class="title">
+                    <strong>Команда</strong>
+                    <span>Лесоводы тайги</span>
+                </div>
+                <div class="user row">
+                    <div class="col-sm-4">
+                        <div class="user__photo">
+                            <img class="img-responsive" src="img/b05_img1.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="user__name">
+                                <span class="user__name-last">Миронов</span>
+                                <span class="user__name-first">Арсений Михайлович</span>
+                                <span class="user__name-status">Орнитолог</span>
+                            </div>
+                        </div>
+                        <div class="user__text">
+                            <p>Среди задач орнитологии: изучение видового разнообразия и числа особей на изучаемой территории, изучение систематики, этологии, физиологии и экологии птиц (кольцевание птиц, миграция птиц), фенологии птиц, проблемы охраны редких видов. Среди задач орнитологии: изучение видового разнообразия и числа особей на изучаемой территории, изучение.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-green">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="user__photo">
+                            <img class="img-responsive" src="img/b05_img2.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="user__name">
+                                <span class="user__name-last">Алексеев</span>
+                                <span class="user__name-first">Михаил Тарасович</span>
+                                <span class="user__name-status">Лесовод</span>
+                            </div>
+                        </div>
+                        <div class="user__text">
+                            <p>Среди задач орнитологии: изучение видового разнообразия и числа особей на изучаемой территории, изучение систематики, этологии, физиологии и экологии птиц (кольцевание птиц, миграция птиц), фенологии птиц, проблемы охраны редких видов. Среди задач орнитологии: изучение видового разнообразия и числа особей на изучаемой территории, изучение.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-green">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="user__photo">
+                            <img class="img-responsive" src="img/b05_img3.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="user__name">
+                                <span class="user__name-last">Юрченко</span>
+                                <span class="user__name-first">Виктор Михайлович</span>
+                                <span class="user__name-status">Лесовод</span>
+                            </div>
+                        </div>
+                        <div class="user__text">
+                            <p>Среди задач орнитологии: изучение видового разнообразия и числа особей на изучаемой территории, изучение систематики, этологии, физиологии и экологии птиц (кольцевание птиц, миграция птиц), фенологии птиц, проблемы охраны редких видов. Среди задач орнитологии: изучение видового разнообразия и числа особей на изучаемой территории, изучение.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-green">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <footer class="footer">
 
+        <section class="b06 landingItem" id="b06">
+            <div class="b06__inner">
+                <div class="container">
+                    <div class="title">
+                        <strong>места</strong>
+                        <span>обитания в тайге</span>
+                    </div>
+                </div>
+                <div class="b06__window">
+                    <div class="b06__window-inner">
+                        <span class="b06__window-close"></span>
+                        <div class="b06__slider">
+                            <div class="b06__slider-item">
+                                <div class="b06__window-title">Интересные<br/>места в тайге</div>
+                                <p>та карта знакомит с историей жизни амурского тигра на территории Дальнего Востока и влияния на нее человека. Каждая закладка рассказывает об определенной эпохе, а за каждой меткой скрывается рассказ, история, увлекательный факт, фотография или фильм. Листая и рассматривая закладки, вы увидите, как из повелителя амурской тайги тигр сделался изгоем, и как потом человеку пришлось спасать его и восстанавливать численность. Этот процесс еще не закончен. Листая и рассматривая закладки, вы увидите, как из повелителя амурской тайги тигр сделался изгоем, и как потом человеку пришлось спасать его и восстанавливать численность. Этот процесс еще не закончен.</p>
+                            </div>
+
+                            <div class="b06__slider-item">
+                                <div class="b06__window-title">Интересные<br/>места в тайге</div>
+                                <p>та карта знакомит с историей жизни амурского тигра на территории Дальнего Востока и влияния на нее человека. Каждая закладка рассказывает об определенной эпохе, а за каждой меткой скрывается рассказ, история, увлекательный факт, фотография или фильм. Листая и рассматривая закладки, вы увидите, как из повелителя амурской тайги тигр сделался изгоем, и как потом человеку пришлось спасать его и восстанавливать численность. Этот процесс еще не закончен. Листая и рассматривая закладки, вы увидите, как из повелителя амурской тайги тигр сделался изгоем, и как потом человеку пришлось спасать его и восстанавливать численность. Этот процесс еще не закончен.</p>
+                            </div>
+
+                            <div class="b06__slider-item">
+                                <div class="b06__window-title">Интересные<br/>места в тайге</div>
+                                <p>та карта знакомит с историей жизни амурского тигра на территории Дальнего Востока и влияния на нее человека. Каждая закладка рассказывает об определенной эпохе, а за каждой меткой скрывается рассказ, история, увлекательный факт, фотография или фильм. Листая и рассматривая закладки, вы увидите, как из повелителя амурской тайги тигр сделался изгоем, и как потом человеку пришлось спасать его и восстанавливать численность. Этот процесс еще не закончен. Листая и рассматривая закладки, вы увидите, как из повелителя амурской тайги тигр сделался изгоем, и как потом человеку пришлось спасать его и восстанавливать численность. Этот процесс еще не закончен.</p>
+                            </div>
+
+                            <div class="b06__slider-item">
+                                <div class="b06__window-title">Интересные<br/>места в тайге</div>
+                                <p>та карта знакомит с историей жизни амурского тигра на территории Дальнего Востока и влияния на нее человека. Каждая закладка рассказывает об определенной эпохе, а за каждой меткой скрывается рассказ, история, увлекательный факт, фотография или фильм. Листая и рассматривая закладки, вы увидите, как из повелителя амурской тайги тигр сделался изгоем, и как потом человеку пришлось спасать его и восстанавливать численность. Этот процесс еще не закончен. Листая и рассматривая закладки, вы увидите, как из повелителя амурской тайги тигр сделался изгоем, и как потом человеку пришлось спасать его и восстанавливать численность. Этот процесс еще не закончен.</p>
+                            </div>
+                        </div>
+                        <div class="b06__slider-nav">
+                            <span class="slider-nav nav-prev"></span>
+                            <span class="slider-nav nav-next"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="b07 landingItem" id="b07">
+            <div class="b07__inner">
+                <div class="gallery clearfix"  id="makeMeScrollable">
+                    <div class="gallery__group">
+                        <div class="gallery__item">
+                            <a href="images/gallery_01.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_01.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="gallery__item">
+                            <a href="images/gallery_02.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_02.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gallery__group">
+                        <div class="gallery__item">
+                            <a href="images/gallery_01.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_03.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="gallery__item">
+                            <a href="images/gallery_02.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_04.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gallery__group">
+                        <div class="gallery__item">
+                            <a href="images/gallery_05.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_05.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="gallery__item">
+                            <a href="images/gallery_06.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_06.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gallery__group">
+                        <div class="gallery__item">
+                            <a href="images/gallery_01.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_01.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="gallery__item">
+                            <a href="images/gallery_02.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_02.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gallery__group">
+                        <div class="gallery__item">
+                            <a href="images/gallery_01.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_03.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="gallery__item">
+                            <a href="images/gallery_02.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_04.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gallery__group">
+                        <div class="gallery__item">
+                            <a href="images/gallery_05.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_05.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="gallery__item">
+                            <a href="images/gallery_06.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_06.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gallery__group">
+                        <div class="gallery__item">
+                            <a href="images/gallery_01.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_01.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="gallery__item">
+                            <a href="images/gallery_02.jpg" class="gallery__thumbs">
+                                <img class="img-responsive" src="images/gallery_02.jpg" alt="image">
+                                <div class="gallery__text">
+                                    <div class="gallery__text-inner">
+                                        <div class="gallery__text-title">Животные тайги</div>
+                                        <p>Тайга расстилается по просторам России с запада на восток. Лето в тайге не жаркое, но и не особо холодное, правда короткое, а зима длится долго.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="b08">
+            <div class="container">
+                <h3 class="text-center">Присоединяйтесь к нам в социальных сетях</h3>
+                <div class="social">
+                    <a class="social__twitter"></a>
+                    <a class="social__facebook"></a>
+                    <a class="social__instagram"></a>
+                    <a class="social__odnoklassniki"></a>
+                </div>
+                <div class="wiget row">
+                    <div class="col-sm-6">
+                        <img class="img-responsive" src="images/wiget_instagram.png" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-responsive" src="images/wiget_facebook.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-3">
+                        <div class="footer__nav">
+                            <div class="footer__title">Меню</div>
+                            <ul>
+                                <li><a href="#">Уроки</a></li>
+                                <li><a href="#">Истории</a></li>
+                                <li><a href="#">Природа</a></li>
+                                <li><a href="#">Команда</a></li>
+                                <li><a href="#">Места</a></li>
+                                <li><a href="#">Галерея</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4  col-md-3">
+                        <div class="footer__contact">
+                            <div class="footer__title">Контакты</div>
+                            <ul>
+                                <li><i class="fa fa-phone"></i>+7 (423) 241-48-63</li>
+                                <li><i class="fa fa-envelope"></i>innfo@tagerstrail.ru</li>
+                                <li><i class="fa fa-compass"></i>690003, Приморский край, г. Владивосток, ул. Верхнепортовая, 18а</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4  col-md-6">
+                        <div class="footer__partners">
+                            <div class="footer__title">Партнеры</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
+
+
+        <div class="sidenav hidden-xs hidden-sm">
+            <ul>
+                <li><a class="cur" href="#b02">Уроки</a></li>
+                <li><a href="#b03">Истории</a></li>
+                <li><a href="#b04">Природа</a></li>
+                <li><a href="#b05">Команда</a></li>
+                <li><a href="#b06">Места</a></li>
+                <li><a href="#b07">Галерея</a></li>
+            </ul>
+
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/slick/slick.min.js"></script>
+        <script src="js/vendor/jquery.scrollTo.min.js"></script>
+        <script src="js/vendor/jquery.liLanding.js"></script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/vendor/jquery.smoothDivScroll/js/jquery-ui-1.8.23.custom.min.js"></script>
+        <script src="js/vendor/jquery.smoothDivScroll/js/jquery.kinetic.js"></script>
+        <script src="js/vendor/jquery.smoothDivScroll/js/jquery.mousewheel.min.js"></script>
+        <script src="js/vendor/jquery.smoothDivScroll/js/jquery.smoothdivscroll-1.3-min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

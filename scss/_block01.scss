@@ -12,7 +12,7 @@
 
 	.navbar-brand {
 		padding: 0;
-		width: 100px;
+		width: 140px;
 	}
 
 	.navbar-collapse {
@@ -32,6 +32,11 @@
 
 				&:hover {
 					color: #5be36b;
+					background: transparent;
+				}
+
+				&:active,
+				&:focus {
 					background: transparent;
 				}
 			}
@@ -152,7 +157,7 @@
 		height: 650px;
 
 		.navbar-brand {
-			margin-top: -20px;
+			margin-top: -10px;
 		}
 
 		.navbar-nav {
@@ -202,7 +207,7 @@
 
 		.navbar-brand {
 			width: 200px;
-			margin-top: -45px;
+			margin-top: -25px;
 		}
 
 		.navbar-nav {
@@ -231,6 +236,7 @@
 		}
 
 	}
+
 	@media (min-width: $screen-lg-min) {
 
 		.container {
@@ -239,6 +245,7 @@
 
 		.wwf-logo {
 			top: 20px;
+			position: fixed;
 		}
 	}
 }

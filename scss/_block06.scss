@@ -1,0 +1,132 @@
+.b06 {
+	height: 730px;
+	position: relative;
+	background: url("../img/b06_bg.jpg") top center no-repeat;
+
+	.b06__inner {
+		width: 100%;
+		height: 100%;
+		z-index: 20;
+		position: absolute;
+	}
+
+	.container {
+		height: 100%;
+		position: relative;
+	}
+
+	.title {
+
+		&:after {
+			background: rgba(255, 255, 255, .6);
+		}
+	}
+
+	.b06__window {
+		top: 170px;
+		left: 15px;
+		right: 15px;
+		width: auto;
+		height: 535px;
+		color: #404040;
+		font-size: 14px;
+		overflow: hidden;
+		background: #fff;
+		line-height: 16px;
+		position: absolute;
+		@include box-shadow(11px 11px 15px 0px rgba(0, 0, 0, 0.2));
+
+		.b06__window-inner {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			padding: 35px 25px 70px 25px;
+		}
+
+		.b06__window-close {
+			top: 10px;
+			right: 10px;
+			width: 17px;
+			height: 17px;
+			cursor: pointer;
+			position: absolute;
+			background: url("../img/sprite.png") 0 -75px no-repeat;
+		}
+
+		.b06__slider-nav {
+			left: 30px;
+			bottom: 20px;
+			font-size: 0;
+			line-height: 0;
+			position: absolute;
+
+			span {
+				width: 41px;
+				height: 41px;
+				cursor: pointer;
+				margin: 0 3px;
+				display: inline-block;
+				background: url("../img/sprite.png") no-repeat;
+
+				&.nav-prev {
+					background-position: -42px -41px;
+				}
+
+				&.nav-next {
+					background-position: -41px 0;
+				}
+			}
+		}
+
+		.b06__window-title {
+			color: #262626;
+			font-size: 20px;
+			line-height: 25px;
+			font-weight: 400;
+			position: relative;
+			margin-bottom: 10px;
+			font-family: $font-segoe;
+		}
+
+		.b06__slider-item {
+			outline: none;
+		}
+
+		.slick-dots {
+			top: -35px;
+			left: 0;
+			text-align: left;
+			position: absolute;
+		}
+	}
+
+
+	@media (min-width: $screen-sm-min) {
+
+		.b06__window {
+			left: 10%;
+			right: auto;
+			width: 350px;
+
+			.b06__window-title {
+				color: #262626;
+				font-size: 30px;
+				line-height: 40px;
+				font-weight: 400;
+				position: relative;
+				padding-bottom: 10px;
+				margin-bottom: 15px;
+				font-family: $font-segoe;
+
+				&:before {
+					left: 0;
+					bottom: 0;
+					width: 160px;
+					content: " ";
+					position: absolute;
+					border-bottom: 2px solid #6199ad;
+				}
+			}
+		}
+	}
+}
