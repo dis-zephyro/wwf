@@ -47,8 +47,9 @@
 			background: rgba(60, 60, 60, .6);
 
 			.gallery__text-inner {
-				left: 24px;
-				bottom: 24px;
+				left: 15px;
+				right: 15px;
+				bottom: 15px;
 				position: absolute;
 			}
 
@@ -69,8 +70,13 @@
 			margin-left: -46px;
 			opacity: 1 !important;
 			display: inline-block;
-			background: url("../img/sprite.png") -42px -41px no-repeat;
+			background: url("../img/sprite.png") -82px -41px no-repeat;
+
+			&:hover {
+				background-position: -82px 0;
+			}
 		}
+
 
 		.scrollingRight {
 			left: 50%;
@@ -82,7 +88,11 @@
 			margin-right: 46px;
 			opacity: 1 !important;
 			display: inline-block;
-			background: url("../img/sprite.png") -41px 0 no-repeat;
+			background: url("../img/sprite.png") -123px -41px no-repeat;
+
+			&:hover {
+				background-position: -82px 0;
+			}
 		}
 	}
 

@@ -69,11 +69,22 @@
 				background: url("../img/sprite.png") no-repeat;
 
 				&.nav-prev {
-					background-position: -42px -41px;
+					background-position: -82px -41px;
 				}
 
 				&.nav-next {
-					background-position: -41px 0;
+					background-position: -123px -41px;
+				}
+
+				&:hover {
+
+					&.nav-prev {
+						background-position: -82px 0;
+					}
+
+					&.nav-next {
+						background-position: -41px 0;
+					}
 				}
 			}
 		}
