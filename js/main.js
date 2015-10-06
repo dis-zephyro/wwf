@@ -123,7 +123,7 @@ $(document).ready(function () {
     $("#makeMeScrollable").smoothDivScroll({
         mousewheelScrolling: "",
         manualContinuousScrolling: true,
-        autoScrollingMode: "onStart",
+        autoScrollingMode: "",
         scrollingHotSpotLeftClass: "scrollingLeft",
         scrollingHotSpotRightClass: "scrollingRight"
     });
