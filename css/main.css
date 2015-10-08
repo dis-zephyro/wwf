@@ -5560,9 +5560,10 @@ button.close {
       cursor: pointer;
       margin-left: -46px;
       opacity: 1 !important;
-      display: inline-block;
+      display: inline-block !important;
       background: url("../img/sprite.png") -82px -41px no-repeat; }
       .b07 .gallery .scrollingLeft:hover {
+        opacity: 1 !important;
         background-position: -82px 0; }
     .b07 .gallery .scrollingRight {
       left: 50%;
@@ -5573,9 +5574,10 @@ button.close {
       cursor: pointer;
       margin-right: 46px;
       opacity: 1 !important;
-      display: inline-block;
+      display: inline-block !important;
       background: url("../img/sprite.png") -123px -41px no-repeat; }
       .b07 .gallery .scrollingRight:hover {
+        opacity: 1 !important;
         background-position: -41px 0; }
   .b07 .b06__inner {
     overflow: hidden;

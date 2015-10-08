@@ -122,8 +122,9 @@ $('.b06__window-close').click(function(){
 $(document).ready(function () {
     $("#makeMeScrollable").smoothDivScroll({
         mousewheelScrolling: "",
-        manualContinuousScrolling: true,
+        manualContinuousScrolling: false,
         autoScrollingMode: "",
+        hotSpotScrollingInterval: 80,
         scrollingHotSpotLeftClass: "scrollingLeft",
         scrollingHotSpotRightClass: "scrollingRight"
     });
