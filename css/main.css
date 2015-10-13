@@ -5629,6 +5629,55 @@ button.close {
   .b08 .wiget img {
     margin: 0 auto 30px auto; }
 
+.header {
+  color: #fff;
+  height: 650px;
+  background: url("../img/b01_bg_bg1.jpg") top center no-repeat; }
+  .header .container {
+    height: 100%;
+    padding-top: 220px; }
+  .header .header__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 50px;
+    text-align: center; }
+  .header .wwf-logo {
+    left: 10px;
+    top: 135px;
+    z-index: 10;
+    position: absolute; }
+  .header .social {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    text-align: center;
+    padding-bottom: 60px; }
+    .header .social a {
+      width: 41px;
+      height: 40px;
+      outline: none;
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 6px;
+      background: url("../img/icon_social_sm.png") no-repeat; }
+      .header .social a.social__twitter {
+        background-position: 0 0; }
+      .header .social a.social__facebook {
+        background-position: -52px 0; }
+      .header .social a.social__instagram {
+        background-position: -103px 0; }
+      .header .social a.social__odnoklassniki {
+        background-position: -156px 0; }
+  @media (min-width: 768px) {
+    .header .header__title {
+      font-size: 48px;
+      line-height: 54px;
+      margin-bottom: 50px; } }
+
 .footer {
   color: #fff;
   min-height: 350px;
@@ -5680,6 +5729,49 @@ button.close {
   @media (min-width: 1200px) {
     .footer .container {
       width: 970px; } }
+
+.nav-main {
+  padding: 25px 0;
+  background: #fff;
+  margin-bottom: 0; }
+  .nav-main .navbar-brand {
+    padding: 0;
+    width: 140px; }
+  .nav-main .navbar-collapse {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .nav-main .navbar-nav {
+    font-family: "SegoeUI"; }
+    .nav-main .navbar-nav > li > a {
+      color: #414232;
+      font-size: 14px;
+      font-weight: 700; }
+      .nav-main .navbar-nav > li > a:hover {
+        color: #2d7135;
+        background: transparent; }
+      .nav-main .navbar-nav > li > a:active, .nav-main .navbar-nav > li > a:focus {
+        background: transparent; }
+  .nav-main .navbar-toggle {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #414232;
+    border-radius: 4px; }
+    .nav-main .navbar-toggle .icon-bar {
+      background: #414232; }
+    .nav-main .navbar-toggle:hover {
+      border-color: #414232; }
+      .nav-main .navbar-toggle:hover .icon-bar {
+        background: #414232; }
+
+.content {
+  padding-top: 50px;
+  padding-bottom: 40px; }
 
 .container {
   position: relative; }
@@ -5765,11 +5857,11 @@ html, body {
 
 body {
   color: #535950;
-  font-size: 14px;
   background: #fff; }
 
 h1, h2, h3, h4 {
   padding: 0;
+  font-weight: 600;
   margin: 0 0 20px 0; }
 
 .title {
@@ -5829,11 +5921,6 @@ p {
 
 strong {
   font-weight: 700; }
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
 
 .btn-green {
   font-family: "SegoeUI";

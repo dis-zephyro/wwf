@@ -1,0 +1,72 @@
+.header {
+	color: #fff;
+	height: 650px;
+	background: url("../img/b01_bg_bg1.jpg") top center no-repeat;
+
+	.container {
+		height: 100%;
+		padding-top: 220px;
+	}
+
+	.header__title {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 40px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	.wwf-logo {
+		left: 10px;
+		top: 135px;
+		z-index: 10;
+		position: absolute;
+	}
+
+	.social {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		font-size: 0;
+		line-height: 0;
+		position: absolute;
+		text-align: center;
+		padding-bottom: 60px;
+		
+		a {
+			width: 41px;
+			height: 40px;
+			outline: none;
+			cursor: pointer;
+			display: inline-block;
+			margin: 0 6px;
+			background: url("../img/icon_social_sm.png") no-repeat;
+
+			&.social__twitter {
+				background-position: 0 0;
+			}
+
+			&.social__facebook {
+				background-position: -52px 0;
+			}
+
+			&.social__instagram {
+				background-position: -103px 0;
+			}
+
+			&.social__odnoklassniki {
+				background-position: -156px 0;
+			}
+		}
+	}
+
+
+	@media (min-width: $screen-sm-min) {
+
+		.header__title {
+			font-size: 48px;
+			line-height: 54px;
+			margin-bottom: 50px;
+		}
+	}
+}

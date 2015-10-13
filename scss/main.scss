@@ -13,7 +13,10 @@
 @import "block06";
 @import "block07";
 @import "block08";
+@import "header";
 @import "footer";
+@import "topnav";
+@import "content";
 
 .container {
     position: relative;
@@ -124,13 +127,22 @@ html, body {
 
 body {
     color: #535950;
-    font-size: 14px;
     background: #fff;
 }
 
 h1, h2, h3, h4 {
     padding: 0;
+    font-weight: 600;
     margin: 0 0 20px 0;
+}
+
+
+h1{
+
+}
+
+h2 {
+
 }
 
 .title {
@@ -202,12 +214,6 @@ p {
 
 strong {
     font-weight: 700;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 

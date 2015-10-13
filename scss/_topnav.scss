@@ -1,0 +1,64 @@
+.nav-main {
+	padding: 25px 0;
+	background: #fff;
+	margin-bottom: 0;
+
+	.navbar-brand {
+		padding: 0;
+		width: 140px;
+	}
+
+	.navbar-collapse {
+		@include box-shadow(none);
+	}
+
+	.navbar-nav {
+
+		font-family: $font-segoe;
+
+		> li {
+
+			> a {
+				color: #414232;
+				font-size: 14px;
+				font-weight: 700;
+
+				&:hover {
+					color: #2d7135;
+					background: transparent;
+				}
+
+				&:active,
+				&:focus {
+					background: transparent;
+				}
+			}
+		}
+	}
+
+	.navbar-toggle {
+		position: relative;
+		float: right;
+		margin-right: 15px;
+		padding: 9px 10px;
+		margin-top: 8px;
+		margin-bottom: 8px;
+		background-color: transparent;
+		background-image: none;
+		border: 1px solid #414232;
+		border-radius: 4px;
+
+		.icon-bar {
+			background: #414232;
+		}
+
+		&:hover {
+			border-color: #414232;
+
+			.icon-bar {
+				background: #414232;
+			}
+		}
+	}
+}
+

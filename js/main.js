@@ -117,8 +117,6 @@ $('.b06__window-close').click(function(){
 });
 
 
-
-
 $(document).ready(function () {
     $("#makeMeScrollable").smoothDivScroll({
         mousewheelScrolling: "",
@@ -134,3 +132,4 @@ $(document).ready(function () {
 $(".gallery__item a").fancybox({
     "padding" : 0
 });
+
