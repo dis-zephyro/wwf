@@ -132,17 +132,38 @@ body {
 
 h1, h2, h3, h4 {
     padding: 0;
-    font-weight: 600;
-    margin: 0 0 20px 0;
+    font-weight: 400;
+    margin: 0 0 25px 0;
 }
 
 
 h1{
-
+    color: #49c157;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: $font-segoe;
+    text-transform: uppercase;
 }
 
 h2 {
+    color: #347780;
+    font-size: 36px;
+    line-height: 40px;
+    padding-top: 15px;
+}
 
+h3 {
+    color: #262626;
+    font-size: 30px;
+    line-height: 35px;
+    padding-top: 15px;
+}
+
+h4 {
+    color: #262626;
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 15px;
 }
 
 .title {
@@ -210,6 +231,11 @@ h2 {
 p {
     padding: 0;
     margin: 0 0 10px 0;
+}
+
+a {
+    color: #40b456;
+    text-decoration: underline;
 }
 
 strong {
@@ -304,4 +330,177 @@ strong {
 .btn-long {
     padding-left: 50px;
     padding-right: 50px;
+}
+
+
+
+
+.radio {
+
+    label {
+        color: #404040;
+        font-size: 16px;
+        cursor: pointer;
+        line-height: 20px;
+        position: relative;
+        padding-left: 25px;
+        margin-right: 15px;
+        display: inline-block;
+
+        &:before {
+            left: 0;
+            bottom: 1px;
+            content: "";
+            width: 13px;
+            height: 13px;
+            padding-top: 1px;
+            padding-left: 1px;
+            margin-right: 10px;
+            position: absolute;
+            display: inline-block;
+            background: url("../img/form.png") 0 -13px no-repeat;
+        }
+    }
+
+    input[type=radio] {
+        display: none;
+    }
+
+    input[type=radio]:checked + label:before {
+        background: url("../img/form.png") -13px -13px no-repeat;
+    }
+
+}
+
+.checkbox {
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    label {
+        color: #404040;
+        font-size: 16px;
+        cursor: pointer;
+        line-height: 20px;
+        position: relative;
+        padding-left: 25px;
+        margin-right: 15px;
+        display: inline-block;
+
+        &:before {
+            left: 0;
+            bottom: 1px;
+            content: "";
+            width: 13px;
+            height: 13px;
+            padding-left: 1px;
+            padding-top: 1px;
+            margin-right: 10px;
+            position: absolute;
+            display: inline-block;
+            background: url("../img/form.png") 0 0 no-repeat;
+        }
+    }
+
+
+    input[type=checkbox]:checked + label:before {
+        background: url("../img/form.png") -13px 0px no-repeat;
+    }
+
+}
+
+.table {
+    font-size: 16px;
+
+    th,
+    td {
+      border-right: 1px solid #fff;
+
+        &:last-child {
+            border-color: transparent;
+        }
+    }
+
+    th {
+        color: #fff;
+        background: #486366;
+    }
+
+    td {
+        color: #486366;
+        background: #e9eee2;
+    }
+}
+
+.table-striped {
+    > tbody {
+
+
+        > tr {
+
+            &:nth-of-type(odd) {
+                background-color: #e9eee2;
+            }
+        }
+    }
+}
+
+
+.comment {
+    margin-bottom: 30px;
+
+    .comment-image {
+        width: 133px;
+        height: 133px;
+        overflow: hidden;
+        @include border-radius(50%);
+        margin: 0 auto 30px auto;
+    }
+
+    .comment-text {
+        color: #677262;
+        font-size: 15px;
+        padding: 20px;
+        line-height: 18px;
+        background: #eafecd;
+        position: relative;
+        @include border-radius(10px);
+
+        &:before {
+            top: -30px;
+            left: 50%;
+            content: ' ';
+            margin-left: -20px;
+            position: absolute;
+            border: 20px solid transparent;
+            border-bottom: 20px solid #eafecd;
+        }
+    }
+
+
+    .comment-author {
+        color: #262626;
+        font-size: 24px;
+        margin-bottom: 5px;
+        font-family: $font-segoe;
+    }
+
+    @media (min-width: $screen-sm-min) {
+
+        .comment-image {
+            margin-bottom: 0;
+        }
+
+        .comment-text {
+
+            &:before {
+                top: 45px;
+                left: -30px;
+                margin-left: 0;
+                border: 20px solid transparent;
+                border-right: 20px solid #eafecd;
+            }
+        }
+    }
 }

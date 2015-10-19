@@ -21,6 +21,7 @@
   font-weight: 700;
   line-height: 20px;
   padding: 9px 35px;
+  text-decoration: none;
   @include user-select(none);
   @include border-radius(3px);
 
@@ -29,8 +30,8 @@
   &.active {
     &:focus,
     &.focus {
+      outline: none;
       color: #fff;
-      @include tab-focus;
     }
   }
 
