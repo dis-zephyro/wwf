@@ -6169,4 +6169,8 @@ table {
       border: 20px solid transparent;
       border-right: 20px solid #eafecd; } }
 
+.thumbnail.pull-left {
+  margin-bottom: 10px;
+  margin-right: 10px; }
+
 /*# sourceMappingURL=main.css.map */
