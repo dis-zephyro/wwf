@@ -1,3 +1,11 @@
+$(function() {
+    $(window).resize(function() {
+        $('.b01').height($(window).height() - $('.b01').offset().top);
+    });
+    $(window).resize();
+});
+
+
 $('.topnav li a').click(function(){
     var str=$(this).attr('href');
     $.scrollTo(str, 400);
@@ -135,9 +143,15 @@ $('.map-static').popover({
 });
 
 
+$(".gallery__item a").fancybox({
+    "padding" : 0
+});
+
 
 $(".map-item-more").fancybox({
     "padding" : 20,
+    maxWidth	: 800,
+    maxHeight	: 600,
         beforeLoad: function() {
             $('.map-static').popover('hide');
     }

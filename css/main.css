@@ -5016,7 +5016,8 @@ button.close {
     .b01 .navbar-nav > li > a {
       color: #fff;
       font-size: 14px;
-      font-weight: 700; }
+      font-weight: 700;
+      text-decoration: none; }
       .b01 .navbar-nav > li > a:hover {
         color: #5be36b;
         background: transparent; }
@@ -5847,8 +5848,8 @@ button.close {
 
 /* Base styles
    ========================= */
-html, body {
-  height: 100%; }
+body {
+  min-height: 100%; }
 
 body {
   color: #535950;
