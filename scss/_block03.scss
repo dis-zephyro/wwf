@@ -14,6 +14,62 @@
 	.b03__map {
 		position: relative;
 		border: 3px solid #eafecd;
+
+		.map-item {
+			width: 74px;
+			height: 74px;
+			cursor: pointer;
+			overflow: hidden;
+			vertical-align: top;
+			position: absolute;
+			display: inline-block;
+			border: 3px solid #fff;
+			@include border-radius(50%);
+			@include box-shadow(-8px 6px 10px 0px rgba(0, 0, 0, 0.2));
+
+			img {
+				@include border-radius(50%);
+			}
+		}
+
+		.position-1 {
+			left: 30%;
+			top: 20%;
+		}
+
+		.position-2 {
+			right: 30%;
+			bottom: 30%;
+		}
+
+		.map-video {
+			@include transition(all .2s ease-out);
+
+			&:hover {
+				-webkit-transform: scale(1.4);
+				-moz-transform: scale(1.4);
+				-o-transform: scale(1.4);
+				transform: scale(1.4);
+
+				.btn-play {
+					opacity: .7;
+				}
+			}
+
+			.btn-play {
+				left: 50%;
+				top: 50%;
+				opacity: 0;
+				font-size: 30px;
+				line-height: 30px;
+				position: absolute;
+				margin-top: -15px;
+				margin-left: -12px;
+				display: inline-block;
+				text-decoration: none;
+				color: #fff !important;
+			}
+		}
 	}
 
 	.b03__map-content {
