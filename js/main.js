@@ -142,7 +142,6 @@ $('.map-static').popover({
     html:true
 });
 
-
 $(".gallery__item a").fancybox({
     "padding" : 0
 });
@@ -167,4 +166,18 @@ $(".map-video").fancybox({
     closeClick	: false,
     openEffect	: 'none',
     closeEffect	: 'none'
+});
+
+
+$('.island').popover({
+    html:true
+});
+
+$(".island-more").fancybox({
+    "padding" : 20,
+    maxWidth	: 800,
+    maxHeight	: 600,
+    beforeLoad: function() {
+        $('.island').popover('hide');
+    }
 });

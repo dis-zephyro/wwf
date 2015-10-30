@@ -5625,6 +5625,57 @@ button.close {
   .b08 .wiget img {
     margin: 0 auto 30px auto; }
 
+.b09 {
+  background: #f4fee6;
+  padding-bottom: 80px; }
+  .b09 .islands {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative; }
+    .b09 .islands .island {
+      cursor: pointer;
+      display: inline-block; }
+    .b09 .islands li {
+      z-index: -1;
+      margin-bottom: 20px;
+      text-align: center; }
+      .b09 .islands li.item1 {
+        z-index: 23; }
+      .b09 .islands li.item2 {
+        z-index: 22; }
+      .b09 .islands li.item3 {
+        z-index: 21; }
+      .b09 .islands li.item4 {
+        z-index: 20; }
+  @media (min-width: 768px) {
+    .b09 .islands {
+      text-align: left; }
+      .b09 .islands li {
+        margin-bottom: 20p; }
+        .b09 .islands li.item1 .island {
+          float: right; }
+        .b09 .islands li.item2 {
+          margin-top: -80px; }
+          .b09 .islands li.item2 .island {
+            float: left; }
+        .b09 .islands li.item3 {
+          margin-top: -80px; }
+          .b09 .islands li.item3 .island {
+            float: right; }
+        .b09 .islands li.item4 {
+          margin-top: -80px; }
+          .b09 .islands li.item4 .island {
+            float: left; } }
+  @media (min-width: 992px) {
+    .b09 .islands li.item1 {
+      margin-top: -100px; } }
+  @media (min-width: 1200px) {
+    .b09 .islands {
+      padding: 0 120px; }
+      .b09 .islands li.item1 {
+        margin-top: -100px; } }
+
 .header {
   color: #fff;
   height: 650px;
