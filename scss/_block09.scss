@@ -4,10 +4,10 @@
 
 
 	.islands {
-		margin: 0;
 		padding: 0;
 		list-style: none;
 		position: relative;
+		margin: 0 0 40px 0;
 
 		.island {
 			cursor: pointer;
@@ -36,7 +36,6 @@
 			}
 		}
 	}
-
 
 	@media (min-width: $screen-sm-min) {
 
