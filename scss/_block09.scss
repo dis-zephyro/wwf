@@ -22,15 +22,6 @@
 
 			&.item1 {
 				z-index: 23;
-
-				.island:before {
-					right: -400px;
-					width: 415px;
-					height: 146px;
-					content: ' ';
-					position: absolute;
-					background: url("../img/point01.png") 0 0 no-repeat;
-				}
 			}
 
 			&.item2 {

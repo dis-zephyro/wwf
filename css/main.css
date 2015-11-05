@@ -5643,13 +5643,6 @@ button.close {
       text-align: center; }
       .b09 .islands li.item1 {
         z-index: 23; }
-        .b09 .islands li.item1 .island:before {
-          right: -400px;
-          width: 415px;
-          height: 146px;
-          content: ' ';
-          position: absolute;
-          background: url("../img/point01.png") 0 0 no-repeat; }
       .b09 .islands li.item2 {
         z-index: 22; }
       .b09 .islands li.item3 {
@@ -6263,7 +6256,7 @@ table {
   margin-right: 10px; }
 
 .form-block {
-  width: 100%;
+  width: 260px;
   margin: 0 auto;
   height: 411px;
   padding-left: 20px;
