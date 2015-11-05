@@ -5635,6 +5635,7 @@ button.close {
     margin: 0 0 40px 0; }
     .b09 .islands .island {
       cursor: pointer;
+      position: relative;
       display: inline-block; }
     .b09 .islands li {
       z-index: -1;
@@ -5642,6 +5643,13 @@ button.close {
       text-align: center; }
       .b09 .islands li.item1 {
         z-index: 23; }
+        .b09 .islands li.item1 .island:before {
+          right: -400px;
+          width: 415px;
+          height: 146px;
+          content: ' ';
+          position: absolute;
+          background: url("../img/point01.png") 0 0 no-repeat; }
       .b09 .islands li.item2 {
         z-index: 22; }
       .b09 .islands li.item3 {
@@ -5654,27 +5662,57 @@ button.close {
       .b09 .islands li {
         margin-bottom: 0; }
         .b09 .islands li.item1 .island {
-          float: right; }
+          float: left; }
         .b09 .islands li.item2 {
           margin-top: -80px; }
           .b09 .islands li.item2 .island {
-            float: left; }
+            float: right; }
         .b09 .islands li.item3 {
           margin-top: -80px; }
           .b09 .islands li.item3 .island {
-            float: right; }
+            float: left; }
         .b09 .islands li.item4 {
           margin-top: -80px; }
           .b09 .islands li.item4 .island {
-            float: left; } }
+            float: right; } }
   @media (min-width: 992px) {
     .b09 .islands li.item1 {
-      margin-top: -100px; } }
+      margin-top: 0; } }
   @media (min-width: 1200px) {
     .b09 .islands {
       padding: 0 120px; }
-      .b09 .islands li.item1 {
-        margin-top: -100px; } }
+      .b09 .islands li.item1 .island:before {
+        right: -350px;
+        width: 415px;
+        height: 146px;
+        content: ' ';
+        position: absolute;
+        background: url("../img/point01.png") 0 0 no-repeat; }
+      .b09 .islands li.item2 {
+        z-index: 22;
+        margin-top: -60px; }
+        .b09 .islands li.item2 .island:before {
+          top: 150px;
+          left: -340px;
+          width: 357px;
+          height: 252px;
+          content: ' ';
+          position: absolute;
+          background: url("../img/point02.png") 0 0 no-repeat; }
+      .b09 .islands li.item3 {
+        z-index: 21;
+        margin-top: 100px; }
+        .b09 .islands li.item3 .island:before {
+          top: 100px;
+          right: -300px;
+          width: 318px;
+          height: 301px;
+          content: ' ';
+          position: absolute;
+          background: url("../img/point03.png") 0 0 no-repeat; }
+      .b09 .islands li.item4 {
+        z-index: 20;
+        margin-top: 120px; } }
 
 .header {
   color: #fff;

@@ -11,6 +11,7 @@
 
 		.island {
 			cursor: pointer;
+			position: relative;
 			display: inline-block;
 		}
 
@@ -21,6 +22,15 @@
 
 			&.item1 {
 				z-index: 23;
+
+				.island:before {
+					right: -400px;
+					width: 415px;
+					height: 146px;
+					content: ' ';
+					position: absolute;
+					background: url("../img/point01.png") 0 0 no-repeat;
+				}
 			}
 
 			&.item2 {
@@ -48,7 +58,7 @@
 				&.item1 {
 
 					.island {
-						float: right;
+						float: left;
 					}
 				}
 
@@ -56,7 +66,7 @@
 					margin-top: -80px;
 
 					.island {
-						float: left;
+						float: right;
 					}
 				}
 
@@ -64,7 +74,7 @@
 					margin-top: -80px;
 
 					.island {
-						float: right;
+						float: left;
 					}
 				}
 
@@ -72,7 +82,7 @@
 					margin-top: -80px;
 
 					.island {
-						float: left;
+						float: right;
 					}
 				}
 			}
@@ -86,8 +96,7 @@
 			li {
 
 				&.item1 {
-					margin-top: -100px;
-
+					margin-top: 0;
 				}
 
 			}
@@ -102,8 +111,51 @@
 			li {
 
 				&.item1 {
-					margin-top: -100px;
 
+					.island:before {
+						right: -350px;
+						width: 415px;
+						height: 146px;
+						content: ' ';
+						position: absolute;
+						background: url("../img/point01.png") 0 0 no-repeat;
+					}
+				}
+
+				&.item2 {
+					z-index: 22;
+					margin-top: -60px;
+
+					.island:before {
+						top: 150px;
+						left: -340px;
+						width: 357px;
+						height: 252px;
+						content: ' ';
+						position: absolute;
+						background: url("../img/point02.png") 0 0 no-repeat;
+					}
+				}
+
+
+				&.item3 {
+					z-index: 21;
+					margin-top: 100px;
+
+					.island:before {
+						top: 100px;
+						right: -300px;
+						width: 318px;
+						height: 301px;
+						content: ' ';
+						position: absolute;
+						background: url("../img/point03.png") 0 0 no-repeat;
+					}
+				}
+
+				&.item4 {
+					z-index: 20;
+					margin-top: 120px;
 				}
 
 			}
