@@ -104,15 +104,43 @@
 
 				&.item1 {
 
+					.island:before {
+						top: 100px;
+						left: -85px;
+						width: 85px;
+						height: 208px;
+						content: ' ';
+						position: absolute;
+						background: url("../img/point04.png") 0 0 no-repeat;
+					}
 				}
 
 				&.item2 {
 					z-index: 22;
-				}
 
+					.island:before {
+						top: 100px;
+						right: -85px;
+						width: 85px;
+						height: 208px;
+						content: ' ';
+						position: absolute;
+						background: url("../img/point05.png") 0 0 no-repeat;
+					}
+				}
 
 				&.item3 {
 					z-index: 21;
+
+					.island:before {
+						top: 0;
+						right: -350px;
+						width: 350px;
+						height: 82px;
+						content: ' ';
+						position: absolute;
+						background: url("../img/point06.png") 0 0 no-repeat;
+					}
 				}
 
 				&.item4 {

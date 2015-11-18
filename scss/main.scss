@@ -519,7 +519,6 @@ table {
     margin-right: 10px;
 }
 
-
 .form-block {
     width: 260px;
     margin: 0 auto;
@@ -651,5 +650,34 @@ table {
         width: 339px;
         padding-left: 30px;
         padding-right: 30px;
+    }
+}
+
+
+blockquote {
+    border: none;
+    position: relative;
+    padding: 10px 30px;
+
+    &:before {
+        left: 0;
+        top: 50%;
+        content: '\f100';
+        color: #ea0f0f;
+        display: block;
+        position: absolute;
+        margin-top: -10px;
+        font: normal normal normal 40px/1 FontAwesome;
+    }
+
+    &:after {
+        right: 0;
+        top: 50%;
+        content: '\f101';
+        display: block;
+        color: #ea0f0f;
+        position: absolute;
+        margin-top: -10px;
+        font: normal normal normal 40px/1 FontAwesome;
     }
 }
