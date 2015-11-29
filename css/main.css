@@ -5647,14 +5647,14 @@ button.close {
     -ms-border-radius: 10px 10px 0 0;
     border-radius: 10px 10px 0 0; }
   .instagram .instagram__header {
-    height: 160px;
+    min-height: 120px;
     overflow: hidden;
     position: relative;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-    padding: 20px 20px 20px 140px; }
+    padding: 20px 20px 0 140px; }
     .instagram .instagram__header .instagram__avatar {
       top: 20px;
       left: 20px;
@@ -5693,7 +5693,7 @@ button.close {
     .instagram .instagram__header .instagram__info .btn {
       width: 100%; }
   .instagram .instagram__gallery {
-    padding: 0 20px; }
+    padding: 20px 20px 0 20px; }
     .instagram .instagram__gallery ul {
       padding: 0;
       margin: 0 -6px;

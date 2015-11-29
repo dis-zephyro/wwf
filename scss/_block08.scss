@@ -77,11 +77,11 @@
 	}
 
 	.instagram__header {
-		height: 160px;
+		min-height: 120px;
 		overflow: hidden;
 		position: relative;
 		@include border-radius(10px);
-		padding: 20px 20px 20px 140px;
+		padding: 20px 20px 0 140px;
 
 		.instagram__avatar {
 			top: 20px;
@@ -134,7 +134,7 @@
 	}
 
 	.instagram__gallery {
-		padding: 0 20px;
+		padding: 20px 20px 0 20px;
 
 		ul {
 			padding: 0;
